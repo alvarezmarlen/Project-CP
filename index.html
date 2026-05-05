@@ -3,25 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/nav-footer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Recorriendo Bizkaia</title>
 </head>
 <body>
     <header>
+        <section class="logo">
+            <a href="index.html"><img src="assets/img/logo_bizcaia.png" alt="logo_bizcaia"></a>
+        </section>
 
-        <nav>
-            
+        <input id="menu-toggle" type="checkbox" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="icon-open">☰</span>
+            <span class="icon-close">✖</span>
+        </label>
+
+        <nav class="menu-nav">
+            <ul class="menu-navegacion">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/quienes_somos.html">Quienes Somos</a></li>
+                <li><a href="pages/destinos.html">Destinos</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>            
         </nav>
     </header>
 
     <main>
+<!-- CARRUSEL O DOS IMAGENES QUE CAMBIARAN ESTO SE IMPLEMENTARA CON JS -->
+ 
+        <h1>RECORRAMOS BIZKAIA</h1>
+
+        <section class="hero-informacion">
+            <h3>¿Vas a viajar al País Vasco o vives aqui y quieres saber cuáles son los pueblos más bonitos de Bizkaia?</h3>
+            <P class="hipervinculo-interno"><a href="pages/destinos.html">Aqui puedes encontrar toda la informacion que necesitas, puedes hacer estos recorridos en coche o si no cuentas con coche propio puedes hacerlos en tren, metro o bus ya que son pueblos encantadores de facil acceso.</a></P>
+            
+            <hr>
+
+            <article class="infor">
+                <p class="text1">Te enamoraras de sus paisajes, sus montañas, el mar Cantábrico salvaje y bravo, el olor a mar de los pueblos pesqueros, el ambiente de sus plazas y terrazas.</p>
+
+                <p class="text2">Y es que viajar por Biskaia es empaparse de paisajes, de gastronomía, de cultura, de historia. Es perderse por sus pequeños rincones, pasear sus calles, subir al monte y disfrutar de las infinitas actividades al aire libre que se pueden hacer. Es bañarse en sus bonitas playas, ver a los surferos en la cresta de la ola, probar las gildas, el bacalao y un buen txakoli para acompañar.</p>
+            </article>     
+
+        </section>
+
+        <section class="intermodal">
+            <h2>Consultar Ruta de buses</h2>
+            <div class="estacion-intermodal">
+                <a href="https://www.bilbaointermodal.eus/es/index.html" target="_blank">Consulta Aqui</a>                
+            </div>
+        </section>
+
+
+
+
 
 
     </main>
 
 
     <footer>
+      <div class="footer-contacto">
+        <h2>Contacto</h2>
+        <p><a href="https://www.google.com/maps/place/C.+del+Lic.+Poza,+5,+48008+Bilbao,+Vizcaya/@43.260663,-2.9347865,16z" target="_blank"> Calle Licenciado Poza 5 – Bilbao 48001</a></p>
+        <p><i class="fas fa-phone"></i> <a href="https://wa.me/34613079678" target="_blank">Teléfono: 613 07 96 78</a></p>
+        <p><i class="fas fa-envelope"></i> Correo electrónico: <a class="mail-link" href="mailto:marlenjosefalvarez@gmail.com">marlenjosefalvarez@gmail.com</a></p>
+      </div>
+      <div class="footer-redes">
+        <h2>Redes Sociales</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/tuusuario" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/tuusuario" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.tiktok.com/@tuusuario" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+        </ul>   
+      </div>
+          <div class="footer-inf">
+        <h2>Información</h2>
+        <ul>
+          <li><a href="aviso_legal.html">Aviso legal</a></li>
+          <li><a href="politica_de_cookies.html">Política de cookies</a></li>
+          <li><a href="politica_privacidad.html">Política de Privacidad</a></li>
+        </ul>
+      </div>    
+    </footer>
 
-
-    </footer>    
+      <div class="footer-bottom">
+      <p>Copyright © 2026 - Desarrollado por <a class="diseño" href="https://github.com/alvarezmarlen" target="_blank">Marlen Alvarez</a></p>
+      </div>   
 </body>
 </html>

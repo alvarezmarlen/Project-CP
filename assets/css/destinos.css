@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.fotos-grid {
+  display: grid;
+  /* Esto crea columnas de mínimo 250px que se ajustan solas */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px; 
+}
+
+.fotos-grid img {
+  width: 100%;
+  height: 200px; /* Altura fija para que todas se alineen */
+  object-fit: cover; /* Recorta la imagen para que no se deforme */
+}
+
+.destinos{
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}

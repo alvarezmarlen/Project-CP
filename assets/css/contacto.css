@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contacto{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.estructura-form{   
+    padding: 5rem;
+    background-color: whitesmoke;
+    border-radius: 5%;  
+    font-size: 1.4rem; 
+    line-height: 2.5rem;
+}
+.estructura-form input{
+    font-size: 1.3rem;
+    border-radius: 0.2rem;
+}
+form{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+legend{
+    color: hsl(219, 88%, 38%);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.botones{
+    text-align: center;
+
+    input{
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+    }
+}
+.nombre-pueblos{
+    font-size: 1.2rem;
+}
+.enviar, .res{
+    padding: 1rem;
+    color: rgb(55, 122, 16);
+    margin-left: 1.5rem;
+}
+
+.enviar:hover, .res:hover{
+    background-color: rgb(136, 197, 65);
+    color: black;
+}

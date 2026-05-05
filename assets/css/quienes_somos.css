@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.somos{
+    font-family:monospace;
+    margin: 10rem 15rem;
+    text-align: justify;
+}
+
+.somos1{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.somos-ul{
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+    padding: 0 5rem  5rem 0;
+}
+.somos-ul li{
+    padding: 0 1rem  1.5rem 0;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/nav-footer.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/contacto.css">
+
+
+    <title>Bizcaia | Quienes somos</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <a href="../index.html"><img src="../assets/img/logo_bizcaia.png" alt=""></a>
+        </section>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="icon-open">☰</span>
+            <span class="icon-close">✖</span>
+        </label>
+
+        <nav class="menu-nav">
+            <ul class="menu-navegacion">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="contacto">Contáctanos</h2>
+        <section class="estructura-form">
+            <form action="">
+                <fieldset>
+                    <legend>Datos personales</legend> <br>
+                    <label for="name">Nombre</label>
+                    <input id="name" type="text" placeholder="Ingresa tu nombre"><br>
+
+                    <label for="surname">Apellido</label>
+                    <input id="surname" type="text"  placeholder="Ingresa tu apellido"><br>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email"><br>
+
+                    <label for="password">Contraseña</label>
+                    <input id="password" type="password"> 
+                    <br> <br>
+                </fieldset>
+
+                <br> <br>
+
+                <fieldset>
+                    <legend>Información de Pueblos</legend> <br>
+                    <label for="costa">Costa</label>
+                    <input id="costa" type="radio" value="paseos-costa" name="paseos">
+                    <br>
+                    <label for="interior">Interior</label>
+                    <input id="interior" type="radio" value="paseos-interior" name="paseos">
+                    <br> <br>
+
+                    <label for="llegar-tren">Tren</label>
+                    <input id="llegar-tren" type="checkbox" value="llegar-tren" name="traslado">
+                    <br>
+                    <label for="metro">Metro</label>
+                    <input id="metro" type="checkbox" value="llegar-metro" name="traslado">
+                    <br>
+                    <label for="bus">Buses</label>
+                    <input id="bus" type="checkbox" value="llegar-bus" name="traslado">
+            
+                    <br><br>
+                    <label for="pueblos">Pueblos Disponibles</label>
+                    <select id="pueblos" class="nombre-pueblos" name="pueblos">
+                        <option disabled selected>Seleccione un pueblo...</option>
+                        <option value="bakio">Bakio</option>
+                        <option value="bermeo">Bermeo</option>
+                        <option value="ea">Ea</option>
+                        <option value="getxo">Getxo</option>
+                        <option value="gorliz">Gorliz</option>
+                        <option value="lekeitio">Lekeitio</option>
+                        <option value="mundaka">Mundaka</option>
+                        <option value="ondarroa">Ondarroa</option>
+                        <option value="plentzia">Plentzia</option>
+                        <option value="sopela">Sopela</option>
+                        <option value="balmaseda">Balmaseda</option>
+                        <option value="durango">Durango</option>
+                        <option value="elorrio">Elorrio</option>
+                        <option value="gernika">Gernika</option>
+                        <option value="orduna">Orduna</option>
+                    </select> <br> <br>
+                </fieldset>
+                <article class="botones">
+                    <input class="enviar" type="submit">
+                    <input class="res" type="reset">
+                </article>
+
+          </form>
+        </section>
+
+
+
+       
+
+    </main>
+
+        <footer>
+      <div class="footer-contacto">
+        <h2>Contacto</h2>
+        <p><a href="https://www.google.com/maps/place/C.+del+Lic.+Poza,+5,+48008+Bilbao,+Vizcaya/@43.260663,-2.9347865,16z" target="_blank"> Calle Licenciado Poza 5 – Bilbao 48001</a></p>
+        <p><i class="fas fa-phone"></i> <a href="https://wa.me/34613079678" target="_blank">Teléfono: 613 07 96 78</a></p>
+        <p><i class="fas fa-envelope"></i> Correo electrónico: <a class="mail-link" href="mailto:marlenjosefalvarez@gmail.com">marlenjosefalvarez@gmail.com</a></p>
+      </div>
+      <div class="footer-redes">
+        <h2>Redes Sociales</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/tuusuario" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/tuusuario" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.tiktok.com/@tuusuario" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+        </ul>   
+      </div>
+          <div class="footer-inf">
+        <h2>Información</h2>
+        <ul>
+          <li><a href="aviso_legal.html">Aviso legal</a></li>
+          <li><a href="politica_de_cookies.html">Política de cookies</a></li>
+          <li><a href="politica_privacidad.html">Política de Privacidad</a></li>
+        </ul>
+      </div>    
+    </footer>
+      <div class="footer-bottom">
+      <p>Copyright © 2026 - Desarrollado por <a class="diseño" href="https://github.com/alvarezmarlen" target="_blank">Marlen Alvarez</a></p>
+      </div>     
+</body>
+</html>

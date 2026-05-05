@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex; /* Convierte al header en el jefe de la distribución 🏗️ */
+    justify-content: space-between; /* Empuja los extremos si sobra espacio ↔️ */
+    align-items: center; /* Centra todo verticalmente para que nada se vea "colgado" ⚖️ */
+
+    position: sticky; /* Se queda pegado al hacer scroll */
+    top: 0;          /* Define que se pegue justo al inicio de la pantalla */
+    z-index: 1000;    /* Asegura que el menú pase por ENCIMA de las imágenes y textos */
+    
+    /* Tu estilo visual */
+    background: linear-gradient(to right, rgb(51, 215, 207), rgb(237, 237, 50), rgb(65, 235, 70));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 2rem; /* Un pequeño margen interno para que no toque los bordes de la pantalla 🖼️ */
+}
+header .logo img {
+    width: 250px; 
+    height: auto; /* Mantiene la proporción para que no se vea aplastada */
+    object-fit: contain; /* Asegura que la imagen quepa bien en su espacio */
+}
+
+.menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+.menu-navegacion {
+    display: flex;
+    list-style: none;
+    padding-top: 3rem;
+}
+
+.menu-navegacion a{
+    text-decoration: none;
+    margin: 1.2rem;
+}
+.menu-navegacion a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+/* --------------------------------------------
+   PIE DE PÁGINA
+-------------------------------------------- */
+footer {
+    color: white;
+    padding: 2rem 1rem;
+    font-size: 16px;  
+    
+    /* ESTO ES LO MÁS IMPORTANTE PARA QUE NO SE SUPERPONGAN */
+    display: flex; 
+    justify-content: space-around; /* Reparte las 3 secciones a lo ancho */
+    align-items: flex-start;      /* Las alinea por la parte de arriba */
+    flex-wrap: wrap;              /* Si la pantalla es pequeña, se ponen una abajo de otra */
+}
+
+/* Para que cada una de tus 3 secciones tenga su propio espacio */
+.footer-contacto, .footer-redes, .footer-inf {
+    flex: 1;             /* Se reparten el ancho por igual */
+    min-width: 250px;    /* No dejan que se aplasten menos de 250px */
+    margin-bottom: 1.5rem; /* Espacio por si se ponen una debajo de otra */
+    text-align: center;
+}
+.footer-redes ul {
+    display: flex;             /* Pone los elementos en fila ↔️ */
+    justify-content: center;   /* Los centra horizontalmente 🎯 */
+    gap: 1rem;                 /* Crea un espacio uniforme entre los iconos 📏 */
+    list-style: none;          /* Quita los puntos de la lista 🚫 */
+    padding: 0;                /* Quita el espacio extra a la izquierda */
+}
+/* Quitemos las lineas de las a */
+.footer-contacto a, .footer-inf a{
+    text-decoration: none;
+    color: white;
+}
+/* Quitemos los puntos de las listas */
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* El copyright que va abajo del todo */
+.footer-bottom {
+    width: 100%;       /* Este sí ocupa todo el ancho */
+    text-align: center;
+    padding: 1rem;
+    background: #111;
+    color: white;
+    font-size: 14px;
+}
+a.diseño{
+  color: #04e4bb;
+  text-decoration: none;
+}
+.footer-redes a {
+  display: inline-block;
+  width: 30px; /* Ancho del icono */
+  height: 30px; /* Alto del icono */
+  border-radius: 50%; /* Bordes redondeados */
+  color: #111; /* Color del icono */
+  font-size: 20px; /* Tamaño del icono */
+  overflow: hidden; /* Ocultar el desbordamiento */
+}
+.footer-redes a.instagram {
+  background-color: #E1306C;  
+  color: white;               /
+}
+.footer-redes a.facebook {
+  background-color: #3b5998;  
+  color: white;               
+}
+.footer-redes a.tiktok {
+  background-color: black;  
+  color: white;        
+}
+.footer-redes a:hover{
+  background-color: #02b090; 
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between; /* Mantiene logo a la izq e icono a la derecha */
+        align-items: center; /* Los alinea perfectamente al centro vertical */
+        padding: 0 2rem; /* Asegura que no toquen el borde físico de la pantalla */
+    }
+    /* 1. Mostramos los iconos y ocultamos el menú normal */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        z-index: 100; /* Para que siempre esté arriba */
+        margin-left: auto; /* Esto es un "ancla" extra para empujarlo a la derecha */
+        text-align: right; 
+        width: auto; /* Evita que ocupe todo el ancho y se centre */
+    }
+
+    .menu-navegacion {
+        display: none; /* Oculto por defecto en móvil */
+        flex-direction: column; /* Se apilan uno debajo de otro */
+        position: absolute;
+        top: 120px; /* Ajusta según el alto de tu header */
+        left: 0;
+        width: 100%;
+        background: rgba(51, 215, 207, 0.95); /* Fondo sólido para que se lea bien */
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    /* 2. LÓGICA DE ACTIVACIÓN (Cuando haces clic) */
+    
+    /* Si el checkbox está marcado, mostramos la lista <ul> */
+    .menu-toggle:checked ~ .menu-nav .menu-navegacion {
+        display: flex;
+    }
+
+    /* Manejo de iconos (X y Hamburguesa) */
+    .icon-close { display: none; } /* La X empieza oculta */
+
+    .menu-toggle:checked ~ .menu-icon .icon-open {
+        display: none; /* Oculta la ☰ cuando abres */
+    }
+
+    .menu-toggle:checked ~ .menu-icon .icon-close {
+        display: block; /* Muestra la ✖ cuando abres */
+    }
+
+    /* 3. Ajuste del Footer para que se apile */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
