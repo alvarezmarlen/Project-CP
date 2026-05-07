@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les mostramos los rincones màs hermosos que pueden admirar en Bizkaia, contamos con rutas que pueden acceder desde coche, como bus, tren y metro">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="assets/css/nav-footer.css">
@@ -27,13 +28,24 @@
                 <li><a href="pages/quienes_somos.html">Quienes Somos</a></li>
                 <li><a href="pages/destinos.html">Destinos</a></li>
                 <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/inicio.html" id="btnAbrir"><i class="fa-solid fa-user-tie"></i></a></li>
             </ul>            
         </nav>
     </header>
 
     <main>
+
+        <div id="fecha-dia" class="fecha-actual"></div>
+
 <!-- CARRUSEL O DOS IMAGENES QUE CAMBIARAN ESTO SE IMPLEMENTARA CON JS -->
- 
+        <section class="contenedor-imagen">
+            <img id="imagen" class="imagen-cambiante" src="./assets/img/carrusel/bilbao2.jpg" onmouseover="entrar()" onmouseout="salir()" alt="imagen de bilbao">
+            <button id="btn1"">CAMBIAR</button>
+
+        </section>
+
+
+
         <h1>RECORRAMOS BIZKAIA</h1>
 
         <section class="hero-informacion">
@@ -56,10 +68,6 @@
                 <a href="https://www.bilbaointermodal.eus/es/index.html" target="_blank">Consulta Aqui</a>                
             </div>
         </section>
-
-
-
-
 
 
     </main>
@@ -93,5 +101,8 @@
       <div class="footer-bottom">
       <p>Copyright © 2026 - Desarrollado por <a class="diseño" href="https://github.com/alvarezmarlen" target="_blank">Marlen Alvarez</a></p>
       </div>   
+
+      <script src="assets/js/cambiar_img.js"></script>
+      <script src="assets/js/fecha-dia.js"></script>
 </body>
 </html>
