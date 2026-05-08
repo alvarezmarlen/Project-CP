@@ -2,11 +2,11 @@
 const fotoPortada = document.querySelector("#imagen");
 
 function entrar() {
-    fotoPortada.setAttribute("src", "../assets/img/carrusel/bilbao3.webp");    
+    fotoPortada.setAttribute("src", "./assets/img/carrusel/bilbao3.webp");    
 }
 
 function salir() {
-    fotoPortada.setAttribute("src", "../assets/img/carrusel/bilbao2.jpg");    
+    fotoPortada.setAttribute("src", "./assets/img/carrusel/bilbao2.jpg");    
 }
 
 const boton = document.querySelector("button");
