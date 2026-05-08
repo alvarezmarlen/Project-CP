@@ -17,8 +17,8 @@ function cambiar(event) {
 
     let imagenActual = fotoPortada.getAttribute("src")
 
-    let imagenPerro = "../assets/img/carrusel/bilbao2.jpg";
-    let imagenMuseo = "../assets/img/carrusel/bilbao3.webp";
+    let imagenPerro = "./assets/img/carrusel/bilbao2.jpg";
+    let imagenMuseo = "./assets/img/carrusel/bilbao3.webp";
 
         if (imagenActual == imagenPerro) {
             fotoPortada.setAttribute("src", imagenMuseo);
